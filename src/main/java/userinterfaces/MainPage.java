@@ -9,7 +9,8 @@ import org.openqa.selenium.By;
 public class MainPage extends PageObject {
 
     public static final Target BotonNotaTextoEnriquecido = Target.the("Boton de nota de texto enriquecido").located(By.id("richtextnote-tab"));
-    public static final Target BotonNegrita = Target.the("Boton de negrita de texto enriquecido").located(By.xpath("//button/span[contains(text(),'Bold')]"));
+    public static final Target BotonNegrita = Target.the("Boton de negrita de texto enriquecido").located(By.xpath("//button[@aria-pressed='false']"));
+    //public static final Target BotonNegrita = Target.the("Boton de negrita de texto enriquecido").located(By.xpath("//button/span[contains(text(),'Bold')]"));
     public static final Target CampoTexto= Target.the("Campo de nota de texto enriquecido").located(By.id("editor"));
 
 }

@@ -23,7 +23,7 @@ public class NotaTextoEnriquecido implements Task {
         actor.attemptsTo(
                 Scroll.to(MainPage.BotonNotaTextoEnriquecido).andAlignToTop(),
                 Click.on(MainPage.BotonNotaTextoEnriquecido),
-                //Click.on(MainPage.BotonNegrita),
+                Click.on(MainPage.BotonNegrita),
                 Enter.theValue(Text).into(MainPage.CampoTexto)
         );
 

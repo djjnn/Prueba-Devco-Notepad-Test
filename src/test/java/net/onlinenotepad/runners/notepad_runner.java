@@ -1,13 +1,15 @@
 package net.onlinenotepad.runners;
 
+import io.cucumber.java.BeforeAll;
 import io.cucumber.junit.CucumberOptions;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/my-devco-feature.feature",
         glue = "net.onlinenotepad.stepdefinitions",
+        features = "src/test/resources/features/notepadTest.feature",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class notepad_runner {
